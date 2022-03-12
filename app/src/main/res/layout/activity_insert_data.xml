@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertData">
+
+    <EditText
+        android:id="@+id/t1"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Vehicle no(AA-NN-AA-NNNN)"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:onClick="addrecords"
+        android:text="Park"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+    <EditText
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Phone No"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/t1"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+    <DigitalClock
+        android:id="@+id/time"
+        android:layout_width="77dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/t2"
+        app:layout_constraintStart_toEndOf="@+id/t2"
+        app:layout_constraintTop_toTopOf="@+id/t2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Regular Customer"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="@+id/t2"
+        app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Electric vehicle"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintStart_toEndOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Charge"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox5"
+        app:layout_constraintStart_toStartOf="@+id/checkBox5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
